@@ -1,0 +1,13 @@
+django==4.2.9
+django-cms==4.1.0
+django-use-email-as-username
+django-mathfilters
+django_compressor
+djangocms-page-tags
+djangocms-admin-style
+django-filer
+djangocms-picture
+djangocms-text-ckeditor
+django-modeltranslation
+djangocms-frontend[cms-4]
+markdown

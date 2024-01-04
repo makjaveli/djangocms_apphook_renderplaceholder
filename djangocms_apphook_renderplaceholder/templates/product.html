@@ -1,0 +1,27 @@
+
+{% load cms_tags sekizai_tags static %}
+
+<html>
+    <head>
+        <title>{% page_attribute "page_title" %}</title>
+        {% render_block "css" %}
+    </head>
+
+    <body>
+        {% cms_toolbar %}
+        
+        <p>Rendering product.html template</p>
+
+        <p><b>product_title:</b> {{ product.product_title }}</p>
+
+        <p><b>available:</b> {{ product.available }}</p>
+        
+        <p><b>product description</b> (below should be editable through a CMS placeholder)</p>
+
+        <div style="width:600px; height:100px; background-color:lightgrey;">
+	    {% render_placeholder product.description %}
+        </div>
+
+        {% render_block "js" %}
+    </body>
+</html>
