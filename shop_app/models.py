@@ -25,6 +25,9 @@ class Product(models.Model):
 #   	     return self._get_placeholder_from_slot("product_description")               
         return get_placeholder_from_slot(self.placeholders, "product_description")
 
+    def get_template(self):
+        return "shop_app/product.html"
+
 
     def __str__(self):
 	    return self.product_title
