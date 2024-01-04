@@ -3,8 +3,9 @@ from cms.apphook_pool import apphook_pool
 from django.urls import include, path
 from shop_app import views
 
+
 @apphook_pool.register  # register the application
-class Machineshophook(CMSApp):
+class ShopAppHook(CMSApp):
     app_name = "shop_app"
     name = "Shop Application"
 #    permissions = True
