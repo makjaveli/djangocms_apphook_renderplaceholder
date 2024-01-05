@@ -13,5 +13,5 @@ class ShopAppHook(CMSApp):
     def get_urls(self, page=None, language=None, **kwargs):
 
         return [
-            path('<str:slug>/', views.render_product)
+            path('<str:slug>/', views.product_view)
         ]
