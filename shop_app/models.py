@@ -22,9 +22,11 @@ class Product(models.Model):
 
     @cached_property
     def description(self):
-#   	     return self._get_placeholder_from_slot("product_description")               
+#   	     return self._get_placeholder_from_slot("product_description")
         return get_placeholder_from_slot(self.placeholders, "product_description")
 
+    def get_template(self):
+        return "product.html"
 
     def __str__(self):
 	    return self.product_title
