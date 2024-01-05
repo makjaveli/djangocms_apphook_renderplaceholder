@@ -1,8 +1,8 @@
 # Django CMS 4 example app to demonstrate the use of app_hook and having a model with editable cms elements through render_placeholder.
 
-Current status: NOT WORKING!
+Current status: Working with help of fsbraun, thank you so much! 
 
-A example for a templage generated django CMS 4 installation with a installed demonstrator django "shop" app with a very basic product model linked with an app_hook to django CMS.
+An example for a template generated django CMS 4 installation with a installed demonstrator django "shop" app with a very basic product model linked with an app_hook to django CMS.
 
 To run:
 
@@ -15,13 +15,13 @@ To run:
    ```
    pip install -r requirements.txt
    ```
-3. Sqlite Database is included and contains example data
+3. Sqlite database is included and contains example data
 
 4. Start Django server
    ```
    python3 manage.py runserver 0:8000
    ```
-5. Login as to CMS backend
+5. Login as admin to CMS backend
    ```
    http://localhost:8000/admin
    Login: django
@@ -32,4 +32,4 @@ To run:
    http://localhost:8000/shop/1st_product/
    ```
 
-No page edit option showing in Django CMS toolbar and therefore the "product_description" CMS elements of render_placeholder are not editable.
+7. Press the 'edit' button in the cms toolbar to edit the product description
